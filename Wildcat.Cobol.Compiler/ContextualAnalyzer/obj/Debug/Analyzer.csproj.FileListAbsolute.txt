@@ -1,0 +1,12 @@
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/bin/Debug/ContextualAnalyzer.dll
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/bin/Debug/ContextualAnalyzer.pdb
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/bin/Debug/Exceptions.dll
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/bin/Debug/ReferenceManager.dll
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/bin/Debug/Wildcat.Cobol.Compiler.Structure.dll
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/bin/Debug/Exceptions.pdb
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/bin/Debug/ReferenceManager.pdb
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/bin/Debug/Wildcat.Cobol.Compiler.Structure.pdb
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/obj/Debug/Analyzer.csprojAssemblyReference.cache
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/obj/Debug/Analyzer.csproj.CopyComplete
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/obj/Debug/ContextualAnalyzer.dll
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/ContextualAnalyzer/obj/Debug/ContextualAnalyzer.pdb

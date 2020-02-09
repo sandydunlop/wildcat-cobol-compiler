@@ -1,0 +1,4 @@
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/Exceptions/bin/Debug/Exceptions.dll
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/Exceptions/bin/Debug/Exceptions.pdb
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/Exceptions/obj/Debug/Exceptions.dll
+/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/Exceptions/obj/Debug/Exceptions.pdb
