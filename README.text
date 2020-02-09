@@ -1,14 +1,5 @@
 Wildcat COBOL Compiler for .NET
-Copyright (C) 2006-2007 Sandy Dunlop (sandy@sorn.net)
-http://www.sorn.net/projects/wildcat-cobol-compiler/
-
-Documentation can be found online at:
-
-  http://www.sorn.net/projects/wildcat-cobol-compiler/docs.php
-
-The source code of this program is released under the GPL and is available
-from: 
- 
-  http://www.sorn.net/projects/wildcat-cobol-compiler/download.php
+Copyright (C) 2006-2020 Sandy Dunlop (sandy.dunlop@gmail.com)
+https://github.com/sandydunlop/wildcat-cobol-compiler
 
 Please read the accompanying LICENSE.text file.

@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Wildcat Cobol Compiler for .NET")]
-[assembly: AssemblyCopyright("Copyright © 2007 Sandy Dunlop")]
+[assembly: AssemblyCopyright("Copyright © 2020 Sandy Dunlop")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("0.1.14.0")]
-[assembly: AssemblyFileVersion("0.1.14.0")]
+[assembly: AssemblyVersion("0.1.16.0")]
+[assembly: AssemblyFileVersion("0.1.16.0")]
