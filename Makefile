@@ -1,9 +1,9 @@
-COMPILER=gmcs /debug
+COMPILER=mcs /debug
 COBOLC=cobolc.exe
 PREFIX=/usr/local
 DEBUG=--debug
 
-VERNUM=0.1.14
+VERNUM=0.1.16.1
 
 VER=$(VERNUM)-bin
 SRC=$(VERNUM)-src
