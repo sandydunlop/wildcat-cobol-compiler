@@ -1,4 +1,4 @@
-// Copyright (C) 2006-2007 Sandy Dunlop (sandy@sorn.net)
+// Copyright (C) 2006-2023 Sandy Dunlop (sandy@sorn.net)
 //
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License
@@ -24,7 +24,7 @@ namespace Wildcat.Cobol.Compiler.Structure
     {
         private FigurativeConstantType _type;
         
-        public FigurativeConstantType Type 
+        public new FigurativeConstantType Type 
         {
             get{ return _type; }
             set{ _type = value; }

@@ -1,4 +1,4 @@
-// Copyright (C) 2006-2007 Sandy Dunlop (sandy@sorn.net)
+// Copyright (C) 2006-2023 Sandy Dunlop (sandy@sorn.net)
 //
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License
@@ -224,8 +224,8 @@ namespace Wildcat.Cobol.Compiler.Parser
         private IOControlEntry ParseIOControlEntry()
 		{
       		throw new Compiler.Exceptions.NotImplementedException(_tokenizer.LineNumber,"I-O-CONTROL");
-			IOControlEntry entry = new IOControlEntry();
-			return entry;
+			// IOControlEntry entry = new IOControlEntry();
+			// return entry;
 		}
 		
 		private ConfigurationSection ParseConfigurationSection()
@@ -563,7 +563,6 @@ namespace Wildcat.Cobol.Compiler.Parser
             //TODO: Refactor this
             //Parse DDEs (Data Description Entries)
 			WorkingStorageSection ws = new WorkingStorageSection();
-            Symbol current;
 			while (true)
 			{
 				DataDescription data = ParseDataDescription();
@@ -1334,7 +1333,6 @@ namespace Wildcat.Cobol.Compiler.Parser
         private MultiplyStatement ParseMultiplyStatement()
         {
         	MultiplyStatement mul = new MultiplyStatement();
-            Source source;
             mul.Left = ParseSource();
             if (_tokenizer.Accept(SymType.By))
             {
@@ -1828,9 +1826,7 @@ namespace Wildcat.Cobol.Compiler.Parser
         
         private ArrayList ParseSources()
 		{
-            Symbol current;
             ArrayList sources = new ArrayList();
-
             Source s;
             while ((s = ParseSource(false)) != null)  //Was: true
             {

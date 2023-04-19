@@ -1,4 +1,4 @@
-// Copyright (C) 2006-2007 Sandy Dunlop (sandy@sorn.net)
+// Copyright (C) 2006-2023 Sandy Dunlop (sandy@sorn.net)
 //
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License
@@ -471,7 +471,6 @@ namespace Wildcat.Cobol.Compiler.ILGenerator
             	throw new Compiler.Exceptions.CompilerException("Unknown type");
             	//TODO: Put a line number in this error message
             }
-            return null;
         }
         private string ILType(VariableType type)
         {
@@ -490,7 +489,6 @@ namespace Wildcat.Cobol.Compiler.ILGenerator
             	throw new Compiler.Exceptions.CompilerException("Unknown type");
             	//TODO: Put a line number in this error message
             }
-            return null;
         }
         private string ILType(string type)
         {
@@ -1395,7 +1393,6 @@ namespace Wildcat.Cobol.Compiler.ILGenerator
             else
             {
                 throw new Compiler.Exceptions.CompilerException(src.LineNumber, "Cannot identify sentence type");
-                return null;
             }
         }
         
@@ -1942,7 +1939,7 @@ namespace Wildcat.Cobol.Compiler.ILGenerator
 	                try{
 	                    r+=EmitLoopRelationCondition(condition, startAddress);
 	                }
-	                catch(BasisException be)
+	                catch(BasisException)
 	                {
 	                    r+=EmitLoopStringComparisonCondition(condition, startAddress);
 	                }
@@ -1965,7 +1962,7 @@ namespace Wildcat.Cobol.Compiler.ILGenerator
 	           		try{
 		                r+=EmitLoopRelationCondition(condition, startAddress);
 	           		}
-	           		catch(BasisException be)
+	           		catch(BasisException)
 	           		{
                         r+=EmitLoopStringComparisonCondition(condition, startAddress);
 	           		}

@@ -1,4 +1,4 @@
-// Copyright (C) 2006-2007 Sandy Dunlop (sandy@sorn.net)
+// Copyright (C) 2006-2023 Sandy Dunlop (sandy@sorn.net)
 //
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License
@@ -275,7 +275,6 @@ namespace Wildcat.Cobol.Compiler
 		
 		private string[] GetPackageAssemblyPaths(string packageName)
 		{
-			string packagePath = null;
 			string path = GetPkgconfigPath();
 			if (path==null)
 			{
@@ -291,7 +290,6 @@ namespace Wildcat.Cobol.Compiler
 			process.Start();
 			StreamReader fromAssembler = process.StandardOutput;
 			bool wasSuccessful = false;
-			string buffer = "";
 			while (!wasSuccessful)
 			{
 				string line = fromAssembler.ReadLine();
