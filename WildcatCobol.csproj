@@ -1,82 +1,28 @@
-﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyVersion>0.1.17.0</AssemblyVersion>
+    <Company />
+    <Authors>Sandy Dunlop</Authors>
+    <Product>Wildcat COBOL Compiler</Product>
+    <Description />
+    <Copyright>Copyright © 2006-2023</Copyright>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworks>net7.0</TargetFrameworks>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.50727</ProductVersion>
     <ProjectGuid>{B1767812-ED9A-4918-BFC6-FC086924C474}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Wildcat.Cobol.Compiler</RootNamespace>
-    <AssemblyName>cobolc</AssemblyName>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <AssemblyName>cobolc.exe</AssemblyName>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Wildcat.Cobol.Compiler\CompilerDriver.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Wildcat.Cobol.Compiler\ContextualAnalyzer\Analyzer.csproj">
-      <Project>{917A0DE5-705D-4B06-A2F2-D31DA6814BDC}</Project>
-      <Name>Analyzer</Name>
-    </ProjectReference>
-    <ProjectReference Include="Wildcat.Cobol.Compiler\Exceptions\Exceptions.csproj">
-      <Project>{32F150C7-A260-4B05-AC04-A54251E6F28C}</Project>
-      <Name>Exceptions</Name>
-    </ProjectReference>
-    <ProjectReference Include="Wildcat.Cobol.Compiler\ILGenerator\ILGenerator.csproj">
-      <Project>{5A5E2067-7E6B-456F-8282-41C7DE35B16D}</Project>
-      <Name>ILGenerator</Name>
-    </ProjectReference>
-    <ProjectReference Include="Wildcat.Cobol.Compiler\Parser\Parser.csproj">
-      <Project>{0911C88B-6091-467C-A8FF-D144F693BC56}</Project>
-      <Name>Parser</Name>
-    </ProjectReference>
-    <ProjectReference Include="Wildcat.Cobol.Compiler\References\References.csproj">
-      <Project>{DAA03826-B6AF-45FF-8E4A-8C3ECD9CD093}</Project>
-      <Name>References</Name>
-    </ProjectReference>
-    <ProjectReference Include="Wildcat.Cobol.Compiler\Structure\Structure.csproj">
-      <Project>{26CF8B00-AB83-4DDC-969C-00DCC9D1C316}</Project>
-      <Name>Structure</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bottles.cbl">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="bottles.cbl" />
     <None Include="cobol_grammar.text" />
     <None Include="files.cbl" />
-    <None Include="objects.cbl">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="objects.cbl" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <ItemGroup>
+    <Compile Remove="Wildcat.Cobol.Compiler\Exceptions\BasisException.cs" />
+  </ItemGroup>
 </Project>

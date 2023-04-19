@@ -36,9 +36,10 @@ namespace Wildcat.Cobol.Compiler
 		
 		static void Main(string[] args)
 		{
+			Assembly exeFile = System.Reflection.Assembly.GetExecutingAssembly();
             Console.WriteLine("Wildcat COBOL Compiler for .NET version " +
-            	System.Reflection.Assembly.GetExecutingAssembly().GetName().Version);
-            Console.WriteLine("Copyright (C)2007 Sandy Dunlop (http://www.sorn.net)");
+                exeFile.GetName().Version);
+            Console.WriteLine("Copyright (C)2006-2023 Sandy Dunlop (http://dunlop.dev)");
             if (args.Length < 1)
             {
 				Console.WriteLine("Usage: cobolc.exe [options] program.cbl");

@@ -3,18 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2005
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildcatCobol", "WildcatCobol.csproj", "{B1767812-ED9A-4918-BFC6-FC086924C474}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Wildcat.Cobol.Compiler\Parser\Parser.csproj", "{0911C88B-6091-467C-A8FF-D144F693BC56}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structure", "Wildcat.Cobol.Compiler\Structure\Structure.csproj", "{26CF8B00-AB83-4DDC-969C-00DCC9D1C316}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILGenerator", "Wildcat.Cobol.Compiler\ILGenerator\ILGenerator.csproj", "{5A5E2067-7E6B-456F-8282-41C7DE35B16D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Analyzer", "Wildcat.Cobol.Compiler\ContextualAnalyzer\Analyzer.csproj", "{917A0DE5-705D-4B06-A2F2-D31DA6814BDC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Wildcat.Cobol.Compiler\Exceptions\Exceptions.csproj", "{32F150C7-A260-4B05-AC04-A54251E6F28C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "References", "Wildcat.Cobol.Compiler\References\References.csproj", "{DAA03826-B6AF-45FF-8E4A-8C3ECD9CD093}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,5 +40,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 0.1.17.0
 	EndGlobalSection
 EndGlobal

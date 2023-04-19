@@ -1,6 +1,0 @@
-/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/Parser/obj/Debug/Parser.csprojAssemblyReference.cache
-/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/bin/Wildcat.Cobol.Compiler.Parser.dll
-/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/bin/Wildcat.Cobol.Compiler.Parser.pdb
-/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/Parser/obj/Debug/Parser.csproj.CopyComplete
-/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/Parser/obj/Debug/Wildcat.Cobol.Compiler.Parser.dll
-/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/Parser/obj/Debug/Wildcat.Cobol.Compiler.Parser.pdb

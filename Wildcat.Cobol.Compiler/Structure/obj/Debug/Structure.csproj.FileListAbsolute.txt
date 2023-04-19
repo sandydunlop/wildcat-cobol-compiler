@@ -1,4 +1,0 @@
-/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/bin/Wildcat.Cobol.Compiler.Structure.dll
-/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/bin/Wildcat.Cobol.Compiler.Structure.pdb
-/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/Structure/obj/Debug/Wildcat.Cobol.Compiler.Structure.dll
-/Users/sandy/Library/Mobile Documents/com~apple~CloudDocs/Projects/wildcat-cobol/dev/src/Wildcat.Cobol.Compiler/Structure/obj/Debug/Wildcat.Cobol.Compiler.Structure.pdb
