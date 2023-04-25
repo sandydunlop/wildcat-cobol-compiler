@@ -6,15 +6,31 @@
     <Product>Wildcat COBOL Compiler</Product>
     <Description />
     <Copyright>Copyright © 2006-2023</Copyright>
+    <ReleaseVersion>0.1.17.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>cobolc</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
     <TargetFrameworks>net7.0</TargetFrameworks>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B1767812-ED9A-4918-BFC6-FC086924C474}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Wildcat.Cobol.Compiler</RootNamespace>
-    <AssemblyName>cobolc.exe</AssemblyName>
+    <AssemblyName>cobolc</AssemblyName>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command></command>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <None Include="bottles.cbl" />
