@@ -1,14 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <AssemblyVersion>0.1.17.0</AssemblyVersion>
+    <PackageId>cobolc</PackageId>
+    <Version>0.1.18.0</Version>
+    <Authors>Sandy Dunlop</Authors>
+    <Company>dunlop.dev</Company>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <Company />
     <Authors>Sandy Dunlop</Authors>
     <Product>Wildcat COBOL Compiler</Product>
     <Description />
     <Copyright>Copyright © 2006-2023</Copyright>
-    <ReleaseVersion>0.1.17.0</ReleaseVersion>
-  </PropertyGroup>
-  <PropertyGroup>
+    <ReleaseVersion>0.1.18.0</ReleaseVersion>
+
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>cobolc</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
@@ -20,17 +25,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Wildcat.Cobol.Compiler</RootNamespace>
     <AssemblyName>cobolc</AssemblyName>
-    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <CustomCommands>
-      <CustomCommands>
-        <Command>
-          <type>AfterBuild</type>
-          <command></command>
-        </Command>
-      </CustomCommands>
-    </CustomCommands>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>
     <None Include="bottles.cbl" />
@@ -41,4 +36,23 @@
   <ItemGroup>
     <Compile Remove="Wildcat.Cobol.Compiler\Exceptions\BasisException.cs" />
   </ItemGroup>
+
+<Target Name="PostBuildMacros">
+    <GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
+        <Output TaskParameter="Assemblies" ItemName="CurrentAssembly" />
+    </GetAssemblyIdentity>
+    <ItemGroup>
+        <VersionNumber Include="%(CurrentAssembly.Version)" />
+    </ItemGroup>
+</Target>
+<!-- override PostBuildEvent to call PostBuildMacros -->
+<PropertyGroup>
+    <PostBuildEventDependsOn>
+        $(PostBuildEventDependsOn);
+        PostBuildMacros;
+    </PostBuildEventDependsOn>
+
+</PropertyGroup>
+
+
 </Project>
